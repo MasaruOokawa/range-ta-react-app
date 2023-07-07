@@ -1,38 +1,103 @@
-.App {
+html,
+body {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  overflow-x: hidden;
+  background: #222a2c;
+  font-family: "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  color: #dde3e6;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a {
+  text-decoration: none;
+  transition: color 0.3s;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.sr {
+  width: 0;
+  height: 0;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.top-ttl {
+  color: #CC6539;
+  margin-bottom: 15px;
+}
+
+.sub-ttl {
+  color: #CC6539;
+  font-size: larger;
+  margin-bottom: 50px;
+}
+
+.rslt {
+  font-size: larger;
+}
+
+.btn {
+  position: relative;
+  display: inline-block;
+  margin: 5px 10px;
+  padding: 17px 22px;
+  width: 120px;
+  z-index: 1;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  font-size: 11px;
+  font-size: 0.6875rem;
+  color: #fff;
+  text-align: center;
+  line-height: normal;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+div {
+  color: #dde3e6;
+}
+
+.btn-wrapper {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+}
+
+.btn-wrapper .btn-text {
+  margin-right: 5px;
+}
+
+.btn-center {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.btn-center button {
+  height: 62px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-primary {
+  background-color: #FF7E47 !important;
+  border-color: #CC6539 !important;
+}
+
+.btn-primary:hover {
+  color: #fff !important;
+  background-color: #CC6539 !important;
+  border-color: #CC6539 !important;
 }
