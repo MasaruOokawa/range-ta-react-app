@@ -44,7 +44,7 @@ npm start
 
 ## リンク
 
-- [レンジタイムアシスト](https://masaruookawa.github.io/range-time-assist/)
+- [レンジタイムアシスト](https://masaruookawa.github.io/range-ta-react-app/)
 - [旧サイト](https://masaruookawa.github.io/microwave_calc/)
 
 ## 技術スタック
